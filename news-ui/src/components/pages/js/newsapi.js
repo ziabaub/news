@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 
 let url = "http://localhost:8080/news/";
-let count = 0;
+let count = 5;
 let filtered = [];
 export let jsonData = [];
 
@@ -27,9 +27,10 @@ export let execute = (callback) => {
     init();
     request(url, callback);
 
-    $("#more").on("click", (e) => {
-        e.preventDefault();
-        $("#content").html(print(filtered));
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() === $(document).height()) {
+            $("#content").html(print(filtered));
+        }
     });
 
     $("#reset-btn").on("click", (e) => {

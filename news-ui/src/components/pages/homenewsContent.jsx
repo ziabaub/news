@@ -5,7 +5,6 @@ let Contents = () => (
         <div className="content-news" id="content">
             <br/><br/>
         </div>
-        <input type="submit" id="more" hidden className="btn-more" value="more"/>
     </main>
 );
 
