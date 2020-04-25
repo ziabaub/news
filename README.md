@@ -2,6 +2,7 @@
 
 EPAM java spring mvc rest api curd project on April 15, 2020.<br>
 this application is backend for simple News Management application expose REST APIs. + introduce UI layer.<br><br>
+using javascript react.
 
 
 ### perform the following operations:
