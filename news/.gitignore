@@ -1,0 +1,9 @@
+/.idea/
+/controller/target/
+/repository-jdbc/target/
+/service/target/
+/controller/controller.iml
+/repository-jdbc/repository-jdbc.iml
+/service/service.iml
+/newsDTO.iml
+/news.iml

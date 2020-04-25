@@ -1,0 +1,36 @@
+.content-add-news {
+    background-color: #f9f7f1;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    margin-left: 2%;
+    margin-top: 0;
+    margin-right: 2%;
+}
+
+.create-news-button{
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+
+textarea{
+    color: #2f2f2f;
+    font-family: 'Playfair Display', serif;
+}
+
+
+@media only all and (max-width: 600px) {
+    .create-news-button{
+        margin-bottom: 20%;
+    }
+}
+
+.content-add-news-title{
+    color: #2f2f2f;
+    line-height: 20px;
+    font-style: italic;
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}

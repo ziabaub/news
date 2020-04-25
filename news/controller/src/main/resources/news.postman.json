@@ -1,0 +1,1103 @@
+{
+	"info": {
+		"_postman_id": "8a2f9f89-6f60-4cc6-aeec-cb3d1a8eef36",
+		"name": "news",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "author",
+			"item": [
+				{
+					"name": "author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/author/id/-1021937788",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"author",
+								"id",
+								"-1021937788"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authorAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/author/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"author",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "author",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\n        \"name\": \"author-test\",\n        \"surname\": \"post\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/author/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"author",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authorAll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"ziad\",\n        \"surname\": \"sarrih\"\n    },\n    {\n        \"name\": \"Teresa\",\n        \"surname\": \"Silva\"\n    },\n    {\n        \"name\": \"Christie\",\n        \"surname\": \"Jacobs\"\n    },\n    {\n        \"name\": \"William\",\n        \"surname\": \"Medina\"\n    },\n    {\n        \"name\": \"Kathryn\",\n        \"surname\": \"Farmer\"\n    },\n    {\n        \"name\": \"Ron\",\n        \"surname\": \"Vargas\"\n    },\n    {\n        \"name\": \"Nellie\",\n        \"surname\": \"Diaz\"\n    },\n    {\n        \"name\": \"Steven\",\n        \"surname\": \"Wheeler\"\n    },\n    {\n        \"name\": \"Kathleen\",\n        \"surname\": \"Barker\"\n    },\n    {\n        \"name\": \"Toni\",\n        \"surname\": \"Wilkins\"\n    },\n    {\n        \"name\": \"Clara\",\n        \"surname\": \"Hale\"\n    },\n    {\n        \"name\": \"Winifred\",\n        \"surname\": \"Collins\"\n    },\n    {\n        \"name\": \"Kelli\",\n        \"surname\": \"Jensen\"\n    },\n    {\n        \"name\": \"Curtis\",\n        \"surname\": \"Neal\"\n    },\n    {\n        \"name\": \"Mack\",\n        \"surname\": \"Houston\"\n    },\n    {\n        \"name\": \"Heather\",\n        \"surname\": \"Simmons\"\n    },\n    {\n        \"name\": \"Frank\",\n        \"surname\": \"Stevens\"\n    },\n    {\n        \"name\": \"Paula\",\n        \"surname\": \"Vega\"\n    },\n    {\n        \"name\": \"Clint\",\n        \"surname\": \"Mitchell\"\n    },\n    {\n        \"name\": \"Martin\",\n        \"surname\": \"Stanley\"\n    }\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/author/all/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"author",
+								"all",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "author",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/author/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"author",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authorAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/author/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"author",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "author",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": -793570791,\n        \"name\": \"aad\",\n        \"surname\": \"sarrih\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/author/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"author",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "news",
+			"item": [
+				{
+					"name": "news",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/news/id/-1119461849",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"news",
+								"id",
+								"-1119461849"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newsAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/news/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"news",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "news",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Rock Your Future\",\n    \"author\": {\n        \"name\": \"test4\",\n        \"surname\": \"post\"\n    },\n    \"tags\": [\n        {\n            \"name\": \"fun\"\n        },\n        {\n            \"name\": \"jobs\"\n        }\n    ],\n    \"modificationDate\": \"2000-01-28\",\n    \"fullText\": \"Jobfest has come   up with unique adverts looking out for a software designer, carpenter, and electrician. With the slogan ‘Rock your future’, it encourages jobseekers to apply for a job in a company where they can give their best and have fun at the same time. Focusing on company culture, and the benefits of working with the company, the ad turns what are usually considered to be boring jobs into something exciting. The power of visuals conquers all.\",\n    \"shortText\": \"Jobfest has come up with unique advertisements looking ....\",\n    \"creationDate\": \"2000-01-08\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/news/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"news",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newsAll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n        {\n        \"title\": \"Life’s Too Short\",\n        \"author\": {\n        \"name\": \"Christie\",\n        \"surname\": \"Jacobs\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"1-800-GOT-JUNK\"\n        }\n        ],\n        \"shortText\": \"Apple’s ‘This ad has a powerful  ...\",\n        \"fullText\": \"This ad has a powerful message from the Germany job-hunting website jobsintown.de that says you have to make sure to choose your job wisely to avoid ending up in the wrong one. Using a series of well-designed ads that depict people manually working ATMs, jukeboxes, coffee machines, instant photo booths and washing machines, it shows how miserable a bad job can make you. It’s a very imaginative way to encourage jobseekers to apply for the ‘right’ job.\",\n        \"creationDate\": \"2000-01-28\",\n        \"modificationDate\": \"2000-01-28\"\n        },\n        {\n        \"title\": \"Imaginary Person?\",\n        \"author\": {\n        \"name\": \"Teresa\",\n        \"surname\": \"Silva\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"1943 Lincoln Penny\"\n        },\n        {\n        \"name\": \"1-800-GOT-JUNK\"\n        }\n        ],\n        \"shortText\": \"Alkemy decided to create a job post for ...\",\n        \"fullText\": \"Alkemy decided to create a job post for a person that doesn’t exist. Their ad message says “if you think you are our imaginary person, send us your real CV’ which translates to if you believe you have the skills to work for us, go ahead and apply for the job. The image used for this advert has movie references, and this makes it stronger. Overall, it’s both clever and catchy just like a job ad should be.\",\n        \"creationDate\": \"2000-01-28\",\n        \"modificationDate\": \"2000-01-28\"\n        },\n        {\n        \"title\": \"Hungry Designers\",\n        \"author\": {\n        \"name\": \"ziad\",\n        \"surname\": \"sarrih\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"1980 Olympics\"\n        }\n        ],\n        \"shortText\": \"Apple’s ‘Hungry Designers Wanted’ is an amazing idea.\",\n        \"fullText\": \"Apple’s ‘Hungry Designers Wanted’ is an amazing idea. Making the the famous apple logo half eaten look like a person to represent the hungry job applicants is extremely playful. It presents a challenge to designers; Apple needs motivated individuals to work for them and they are encouraging them to send their CVs to the email provided.\",\n        \"creationDate\": \"1999-01-08\",\n        \"modificationDate\": \"1999-01-28\"\n        },\n        {\n        \"title\": \"Who Cares?\",\n        \"author\": {\n        \"name\": \"Kathleen\",\n        \"surname\": \"Barker\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Checking\"\n        }\n        ],\n        \"shortText\": \"This Swedish Armed Forces job advert touches a sensitive chord. \",\n        \"fullText\": \"This Swedish Armed Forces job advert touches a sensitive chord. To find people who want to make a difference and join the army, they came up with a scenario to see how far they were willing to go to help others. A person was closed up in a small box in the city center, sitting on a chair until someone else agreed to willingly replace him. Every hour the door opened and if someone was there they could replace them. People who chose to get in the box to ‘free’ the other person were considered to be the most suitable for the position. The campaign went viral quickly on social media!\",\n        \"creationDate\": \"2010-01-08\",\n        \"modificationDate\": \"2010-01-28\"\n        },\n        {\n        \"title\": \"Helps motivate\",\n        \"author\": {\n        \"name\": \"Clint\",\n        \"surname\": \"Mitchell\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Cheeseburgers\"\n        },\n        {\n        \"name\": \"Chicken Soup\"\n        },\n        {\n        \"name\": \"Checking\"\n        }\n        ],\n        \"shortText\": \"Paying employees generously means that you \",\n        \"fullText\": \"Paying employees generously means that you have a great retention strategy in place, this alone can help attract more quality candidates to join your company. It also motivates people to work harder and better.\",\n        \"creationDate\": \"2019-01-28\",\n        \"modificationDate\": \"2000-01-22\"\n        },\n        {\n        \"title\": \"Tattoo Artist Wanted\",\n        \"author\": {\n        \"name\": \"William\",\n        \"surname\": \"Medina\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Chicken Soup\"\n        }\n        ],\n        \"shortText\": \"A creative approach to attracting new talent ...\",\n        \"fullText\": \"A creative approach to attracting new talent came from Berrge Tattoo, a company looking for a new tattoo artist. To apply, you have to fill in the QR code carefully and then scan it. It’s a great ad that gets the attention of the applicants, and gives them the opportunity to test their skills.\",\n        \"creationDate\": \"2000-01-28\",\n        \"modificationDate\": \"2000-01-28\"\n        },\n        {\n        \"title\": \"Assembling a Career\",\n        \"author\": {\n        \"name\": \"Steven\",\n        \"surname\": \"Wheeler\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Child Actors\"\n        }\n        ],\n        \"shortText\": \"An excellent way to promote your company is to focus on\",\n        \"fullText\": \"An excellent way to promote your company is to focus on the elements that make it different. IKEA, the Swedish company which is known for the modern and cozy furniture it sells, knows this too well. The proof is in a leaflet that IKEA packed inside every box of furniture. It tells you how to ‘assemble your career’ advertising an opening at the company. This cost nothing and the result was receiving 4285 applications and 280 new hires. Amazing right?\",\n        \"creationDate\": \"2008-01-07\",\n        \"modificationDate\": \"2008-01-28\"\n        },\n        {\n        \"title\": \"Gives you a leg\",\n        \"author\": {\n        \"name\": \"Paula\",\n        \"surname\": \"Vega\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Child Actors\"\n        }\n        ],\n        \"shortText\": \"Many employers think that they...\",\n        \"fullText\": \"Many employers think that they can get away with below the standard wages because they offer benefits, but the truth is that quality candidates will always be attracted towards employees that can pay their worth.\",\n        \"creationDate\": \"2019-01-25\",\n        \"modificationDate\": \"2020-01-24\"\n        },\n        {\n        \"title\": \"Google’s\",\n        \"author\": {\n        \"name\": \"Frank\",\n        \"surname\": \"Stevens\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Chip\"\n        }\n        ],\n        \"shortText\": \"Google’s campaign generated discussions on mathematical\",\n        \"fullText\": \"Google’s campaign generated discussions on mathematical and engineering forums and had people trying to come up with the right answer before the architect of the message became clear. This allowed the company to gain access to a pool of candidates ready-made for them.\",\n        \"creationDate\": \"2018-07-08\",\n        \"modificationDate\": \"2018-08-28\"\n        },\n        {\n        \"title\": \"All of\",\n        \"author\": {\n        \"name\": \"Heather\",\n        \"surname\": \"Simmons\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Chipotle Mexican Grill\"\n        }\n        ],\n        \"shortText\": \"All of these ads have something different to offer\",\n        \"fullText\": \"All of these ads have something different to offer, but they serve the same purpose. Some focus on the employee benefits, others provide a challenge, others are calling out to talented jobseekers and show creativity, and most importantly they manage to capture their attention.\",\n        \"creationDate\": \"2019-12-08\",\n        \"modificationDate\": \"2019-12-28\"\n        },\n        {\n        \"title\": \"Google’s Problem\",\n        \"author\": {\n        \"name\": \"Nellie\",\n        \"surname\": \"Diaz\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Chocolate\"\n        }\n        ],\n        \"shortText\": \"The famous cryptic billboard from Google outruns many\",\n        \"fullText\": \" The famous cryptic billboard from Google outruns many other great job advertisements. In 2004, the company decided to use a Silicon Valley billboard to present a mathematical puzzle to passersby. Those clever and brave jobseekers who accepted the challenge and solved the mystery ended up with www.7427466391.com. After this, they received the following message:  \",\n        \"creationDate\": \"2007-03-08\",\n        \"modificationDate\": \"2007-03-28\"\n        },\n        {\n        \"id\": 15,\n        \"title\": \"Lyft\",\n        \"author\": {\n        \"name\": \"Mack\",\n        \"surname\": \"Houston\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Christian\"\n        },\n        {\n        \"name\": \"Cheeseburgers\"\n        },\n        {\n        \"name\": \"Chicken Soup\"\n        },\n        {\n        \"name\": \"Checking\"\n        }\n        ],\n        \"shortText\": \"What makes Lyft’s advert great? The headline gives\",\n        \"fullText\": \"What makes Lyft’s advert great? The headline gives an essential benefit to every potential Lyft driver. The ability to work outside of the 9 to 5 time schedule, is a great asset for people who are interested in pursuing a career that offers a more flexible work life balance. The ad itself is simple, elegant and positioned where everyone can see it.\",\n        \"creationDate\": \"2018-01-08\",\n        \"modificationDate\": \"2018-01-28\"\n        },\n        {\n        \"title\": \"Watch Your Head\",\n        \"author\": {\n        \"name\": \"Ron\",\n        \"surname\": \"Vargas\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Christian Louboutin\"\n        }\n        ],\n        \"shortText\": \" Warning signs have always caught our attention because...\",\n        \"fullText\": \"Warning signs have always caught our attention because they tell us what we should not do. Tatra Banka has decided to use this to their advantagse to get people reading the ad. Positioned in the middle of a busy road the print ad, makes use of the eye-catching classic combination of yellow and black colours. The sign says ‘Watch your head, we are interested to have it’. Although it almost sounds like a threat, it’s just a joke.\",\n        \"creationDate\": \"2004-01-08\",\n        \"modificationDate\": \"2004-01-28\"\n        },\n        {\n        \"title\": \"Laazi\",\n        \"author\": {\n        \"name\": \"Curtis\",\n        \"surname\": \"Neal\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Christmas\"\n        }\n        ],\n        \"shortText\": \"Laazi uses the old bait-and-switch method to capture\",\n        \"fullText\": \"Laazi uses the old bait-and-switch method to capture the attention of the reader. It opens with ‘In most countries punching your boss is a crime’ and then goes on to encouraging jobseekers to send their CV turning the announcement into an advert. The advert certainly makes a point and manages to stand out from others. This way, the company reflects on their motivating motto, which is ‘dare to dream’.\",\n        \"creationDate\": \"2016-07-08\",\n        \"modificationDate\": \"2016-07-28\"\n        },\n        {\n        \"title\": \"Rock Your Future\",\n        \"author\": {\n        \"name\": \"Kathryn\",\n        \"surname\": \"Farmer\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Chrysler\"\n        }\n        ],\n        \"shortText\": \"Apple’s ‘Jobfest has come up with unique advertisements...\",\n        \"fullText\": \"Jobfest has come up with unique advertisements looking out for a software designer, carpenter, and electrician. With the slogan ‘Rock your future’, it encourages jobseekers to apply for a job in a company where they can give their best and have fun at the same time. Focusing on company culture, and the benefits of working with the company, the ad turns what are usually considered to be boring jobs into something exciting. The power of visuals conquers all.\",\n        \"creationDate\": \"2002-11-04\",\n        \"modificationDate\": \"2002-12-28\"\n        },\n        {\n        \"title\": \"Can you sell air\",\n        \"author\": {\n        \"name\": \"Kelli\",\n        \"surname\": \"Jensen\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Citigroup\"\n        }\n        ],\n        \"shortText\": \"Forget about the pen, the new challenge in sales is...\",\n        \"fullText\": \"Forget about the pen, the new challenge in sales is learning how to sell air. The Nation’s Stations came up with a creative advertisement that challenges jobseekers. While it’s impossible to ‘sell air’ it makes sense in the context of radio communications and it’s a clever play on words. On air, you will need to sell whatever you are promoting and have the right communication skills for it. The ad is looking for anyone who have these abilities.\",\n        \"creationDate\": \"2015-04-08\",\n        \"modificationDate\": \"2015-04-28\"\n        },\n        {\n        \"title\": \"The Big Chair\",\n        \"author\": {\n        \"name\": \"Winifred\",\n        \"surname\": \"Collins\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Class-Action Suit\"\n        }\n        ],\n        \"shortText\": \"The Big Chair, an Australian recruitment service created\",\n        \"fullText\": \"The Big Chair, an Australian recruitment service created effective ads to gather the tagsline for the three positions of CEO, Chair and Chart. Focusing on the financial benefits of these positions, the company came up with a simple yet powerful ad that aims to show ‘where the big jobs are’. Its target market is professionals who are interested in management and earning the big bucks.\",\n        \"creationDate\": \"2014-01-08\",\n        \"modificationDate\": \"2014-01-28\"\n        },\n        {\n        \"title\": \"MailChimp\",\n        \"author\": {\n        \"name\": \"Clara\",\n        \"surname\": \"Hale\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Cloud Girlfriend\"\n        }\n        ],\n        \"shortText\": \"Using simple informal language, quotes and pictures of people, \",\n        \"fullText\": \"Using simple informal language, quotes and pictures of people, Mailchimp is ‘talking’ directly to young jobseekers. The ad is a party invitation which is a great way to invite people to an assessment centre.\",\n        \"creationDate\": \"2012-08-08\",\n        \"modificationDate\": \"2012-08-28\"\n        },\n        {\n        \"title\": \"Employees Coming\",\n        \"author\": {\n        \"name\": \"Toni\",\n        \"surname\": \"Wilkins\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"Collectors \"\n        }\n        ],\n        \"shortText\": \" Employers who don’t want t...\",\n        \"fullText\": \"Employers who don’t want their employees constantly resigning, will find this advert interesting. The recruiting company All Jobs, has identified the problem of the short tenancy of employees and created an advert offering the best solution – to ‘help employers find the perfect employee’. It cleverly shows an office with an underground train station as a reference to ‘coming and going’ or the frequent resignation of employees and the colour red makes the ad all the more powerful.\",\n        \"creationDate\": \"2011-07-08\",\n        \"modificationDate\": \"2011-07-28\"\n        },\n        {\n        \"title\": \"Amazon\",\n        \"author\": {\n        \"name\": \"Martin\",\n        \"surname\": \"Stanley\"\n        },\n        \"tags\": [\n        {\n        \"name\": \"funny\"\n        }\n        ],\n        \"shortText\": \"Amazon: With well over 200,000 employees and a reputation\",\n        \"fullText\": \"Amazon: With well over 200,000 employees and a reputation that other companies would die for. You would expect that compensations would meet the industry standard. But, in reality they far exceed it.\",\n        \"creationDate\": \"2020-01-04\",\n        \"modificationDate\": \"2020-01-25\"\n        }\n        ]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/news/all/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"news",
+								"all",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "news",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/news/-793570791",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"news",
+								"-793570791"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newsAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/news/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"news",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "news",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": -1119461849,\n    \"title\": \"Hungry Designers test\",\n    \"shortText\": \"Apple’s ‘Hungry Designers Wanted’ is an amazing idea.\",\n    \"fullText\": \"Apple’s ‘Hungry Designers Wanted’ is an amazing idea. Making the the famous apple logo half eaten look like a person to represent the hungry job applicants is extremely playful. It presents a challenge to designers; Apple needs motivated individuals to work for them and they are encouraging them to send their CVs to the email provided.\",\n    \"creationDate\": \"1999-01-08\",\n    \"modificationDate\": \"1999-01-28\",\n    \"author\": {\n        \"id\": -793570791,\n        \"name\": \"ziad\",\n        \"surname\": \"sarrih\"\n    },\n    \"tags\": [\n        {\n            \"id\": 2051606012,\n            \"name\": \"1980 Olympics\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/news/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"news",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/news/count/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"news",
+								"count",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "tag",
+			"item": [
+				{
+					"name": "tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tag/id/2051606012",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tag",
+								"id",
+								"2051606012"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tagAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tag/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tag",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tag",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    {\r\n       \r\n        \"name\": \"sport\"\r\n    }\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tag/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tag",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tagAll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"1980 Olympics\"\n    },\n    {\n        \"name\": \"1943 Lincoln Penny\"\n    },\n    {\n        \"name\": \"1-800-GOT-JUNK\"\n    },\n    {\n        \"name\": \"Chicken Soup\"\n    },\n    {\n        \"name\": \"Chrysler\"\n    },\n    {\n        \"name\": \"Christian Louboutin\"\n    },\n    {\n        \"name\": \"Chocolate\"\n    },\n    {\n        \"name\": \"Chicken Soup\"\n    },\n    {\n        \"name\": \"Checking\"\n    },\n    {\n        \"name\": \"Collectors \"\n    },\n    {\n        \"name\": \"Cloud Girlfriend\"\n    },\n    {\n        \"name\": \"Class-Action Suit\"\n    },\n    {\n        \"name\": \"Citigroup\"\n    },\n    {\n        \"name\": \"Christmas\"\n    },\n    {\n        \"name\": \"Christian\"\n    },\n    {\n        \"name\": \"Chipotle Mexican Grill\"\n    },\n    {\n        \"name\": \"Chip\"\n    },\n    {\n        \"name\": \"Child Actors\"\n    },\n    {\n        \"name\": \"Cheeseburgers\"\n    },\n    {\n        \"name\": \"funny\"\n    }\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tag/all/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tag",
+								"all",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tag",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/tag/2051606012",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tag",
+								"2051606012"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tagAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/tag/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tag",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tag",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n                \"id\": 80101078,\n                \"name\": \"aa\"\n            }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tag/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tag",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "role",
+			"item": [
+				{
+					"name": "role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/role/id/-1623386144",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"role",
+								"id",
+								"-1623386144"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roleAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/role/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"role",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"id\": 1,\r\n        \"role\": \"admin\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/role/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"role",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roleAll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"role\": \"client\"\n    },\n    {\n        \"role\": \"archive\"\n    },\n    {\n        \"role\": \"admin\"\n    }\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/role/all/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"role",
+								"all",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "role",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/role/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"role",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roleAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/role/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"role",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "role",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 1,\n        \"role\": \"Test\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/role/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"role",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/id/-1623386144",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"id",
+								"-1623386144"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"name\": \"test\",\r\n        \"surname\": \"test\",\r\n        \"login\": \"test\",\r\n        \"password\": \"1234\",\r\n        \"roles\": {\r\n            \"role\": \"admin\"\r\n        }\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userAll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Ale\",\r\n        \"surname\": \"Balloushi\",\r\n        \"login\": \"Bisho\",\r\n        \"password\": \"sdfgsdgsdf\",\r\n        \"roles\": {\r\n            \"role\": \"admin\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Nina\",\r\n        \"surname\": \"Pope\",\r\n        \"login\": \"Nina\",\r\n        \"password\": \"fgsdfg\",\r\n        \"roles\": {\r\n            \"role\": \"journalist\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Angelica\",\r\n        \"surname\": \"Craig\",\r\n        \"login\": \"Angelica\",\r\n        \"password\": \"sdfsdfsd\",\r\n        \"roles\": {\r\n            \"role\": \"archive\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Patricia\",\r\n        \"surname\": \"Sherman\",\r\n        \"login\": \"Patricia\",\r\n        \"password\": \"sdfasdf\",\r\n        \"roles\": {\r\n            \"role\": \"client\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Elijah\",\r\n        \"surname\": \"Marshall\",\r\n        \"login\": \"Elijah\",\r\n        \"password\": \"sdfgsdg\",\r\n        \"roles\": {\r\n            \"role\": \"client\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Mae\",\r\n        \"surname\": \"Campbell\",\r\n        \"login\": \"Mae\",\r\n        \"password\": \"ererrt\",\r\n        \"roles\": {\r\n            \"role\": \"client\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Seth\",\r\n        \"surname\": \"Peterson\",\r\n        \"login\": \"Seth\",\r\n        \"password\": \"fgdsfg\",\r\n        \"roles\": {\r\n            \"role\": \"client\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Sabrina\",\r\n        \"surname\": \"Adkins\",\r\n        \"login\": \"Sabrina\",\r\n        \"password\": \"sdfggsdf\",\r\n        \"roles\": {\r\n            \"role\": \"archive\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Jenny\",\r\n        \"surname\": \"Bowman\",\r\n        \"login\": \"Jenny\",\r\n        \"password\": \"dfgdsgdfgds\",\r\n        \"roles\": {\r\n            \"role\": \"archive\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Stewart\",\r\n        \"surname\": \"Soto\",\r\n        \"login\": \"Stewart\",\r\n        \"password\": \"dfgdfgdf\",\r\n        \"roles\": {\r\n            \"role\": \"archive\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Lynn\",\r\n        \"surname\": \"Pena\",\r\n        \"login\": \"Lynn\",\r\n        \"password\": \"dsfgfdgd\",\r\n        \"roles\": {\r\n            \"role\": \"archive\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Darla\",\r\n        \"surname\": \"Townsend\",\r\n        \"login\": \"Darla\",\r\n        \"password\": \"sgfdsgsd\",\r\n        \"roles\": {\r\n            \"role\": \"client\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Fredrick\",\r\n        \"surname\": \"Arnold\",\r\n        \"login\": \"Fredrick\",\r\n        \"password\": \"sdfgsdfgs\",\r\n        \"roles\": {\r\n            \"role\": \"archive\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Marie\",\r\n        \"surname\": \"Paul\",\r\n        \"login\": \"Marie\",\r\n        \"password\": \"sdfgsdgds\",\r\n        \"roles\": {\r\n            \"role\": \"client\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Virgil\",\r\n        \"surname\": \"Daniel\",\r\n        \"login\": \"Virgil\",\r\n        \"password\": \"sdfgdfgsd\",\r\n        \"roles\": {\r\n            \"role\": \"admin\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Erin\",\r\n        \"surname\": \"Nash\",\r\n        \"login\": \"Erin\",\r\n        \"password\": \"sdgfsdfgds\",\r\n        \"roles\": {\r\n            \"role\": \"client\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Howard\",\r\n        \"surname\": \"Buchanan\",\r\n        \"login\": \"Howard\",\r\n        \"password\": \"sdfgsdfgsdf\",\r\n        \"roles\": {\r\n            \"role\": \"admin\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Nadine\",\r\n        \"surname\": \"Baker\",\r\n        \"login\": \"NadineBisho\",\r\n        \"password\": \"sdfgsdfgs\",\r\n        \"roles\": {\r\n            \"role\": \"archive\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Susan\",\r\n        \"surname\": \"Mccoy\",\r\n        \"login\": \"Susan\",\r\n        \"password\": \"sdfgsdgdsfg\",\r\n        \"roles\": {\r\n            \"role\": \"archive\"\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Hubert\",\r\n        \"surname\": \"Glover\",\r\n        \"login\": \"Hubert\",\r\n        \"password\": \"sdgfsdgdsfg\",\r\n        \"roles\": {\r\n            \"role\": \"admin\"\r\n        }\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/all/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"all",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/-452072516",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"-452072516"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": -1623386144,\r\n    \"name\": \"fgvvvvfdg\",\r\n    \"surname\": \"Balloushi\",\r\n    \"login\": \"Bisho\",\r\n    \"password\": \"1234\",\r\n    \"roles\": {\r\n        \"id\": -1623386144,\r\n        \"role\": \"admin\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "LoginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"user\",\n    \"password\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginAPI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "a5957e9580982d9b25c5",
+						"type": "text"
+					},
+					{
+						"key": "secret",
+						"value": "c58922196b5b53bc50d8258ed42b7338608ba6b4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginAdmin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"username\": \"admin\",\n        \"password\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ec2c2f27-a8dd-4570-8335-81e9d95903e3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "afc50e54-563e-4aae-856c-85d3671bfec5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

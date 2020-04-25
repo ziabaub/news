@@ -1,0 +1,200 @@
+.header {
+    background-color: #f9f7f1;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    color: #2f2f2f;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+    padding: 5px;
+    border-bottom: 2px solid #2f2f2f;
+
+}
+
+input[type=text]:not(.browser-default){
+    font-family: 'Playfair Display', serif;
+    border-bottom: none;
+    color: #2f2f2f;
+    margin: 9px 0 11px 0;
+}
+
+.MuiInputBase-input {
+    max-height: 1px;
+}
+
+.search-nav label {
+    max-height: 50%;
+    font-size: 20px;
+    align-self: center;
+    align-items: center;
+}
+
+.search-nav button {
+    height: 50%;
+    margin-left: 2%;
+    align-self: center;
+    color: #2f2f2f;
+}
+
+.navigator {
+    display: inline;
+
+}
+
+.top {
+    font-size: 60px;
+    display: block;
+    margin: 0;
+}
+
+.hello_message {
+    margin-top: 25px;
+    max-height: 50%;
+    align-items: center;
+    float: right;
+}
+
+.hello_message span {
+    margin-right: 4px;
+}
+
+.register_login_a {
+    color: #a32ea3;
+    text-decoration: none;
+}
+
+.logout_a {
+    color: #60f3f3;
+    text-decoration: none;
+}
+
+.hello_message a:hover {
+    text-decoration: underline;
+}
+
+.hello_text {
+    margin-right: 5px;
+}
+
+.change_level {
+    float: left;
+    margin-top: -3%;
+}
+
+.change_level ul {
+    list-style: none;
+}
+
+.change_level li {
+    display: inline-block;
+}
+
+.change_level a {
+    color: white;
+    text-decoration: none;
+}
+
+.change_level a:hover {
+    color: #a32ea3;
+}
+
+.users_menu {
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f9f7f1;
+    margin-bottom: 0;
+}
+
+.users_menu ul {
+    height: 60%;
+    padding-left: auto;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.users_menu a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    margin-left: 2%;
+    padding-left: 0;
+    align-self: baseline;
+}
+
+.users_menu a:hover {
+    color: #a32ea3;
+    background-color: transparent;
+}
+
+.users_menu a .fa {
+    color: white;
+}
+
+.users_menu a .fa:hover {
+    text-decoration: underline;
+}
+
+.users_menu form {
+    font-size: 20px;
+    color: white;
+    border: 2px white;
+    display: flex;
+    margin: 0;
+}
+
+.users_menu form label {
+    display: flex;
+}
+
+.users_menu label:hover {
+    color: #a32ea3;
+}
+
+.input-search-query {
+    margin-left: 4px;
+}
+
+.users_menu input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px -moz-mac-accentregularhighlight inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.users_menu button:hover {
+    color: #a32ea3;
+}
+
+.home-icon:hover {
+    color: #a32ea3;
+}
+
+
+@media only all and (max-width: 600px) {
+    .users_menu ul {
+        font-size: 15px;
+    }
+
+    .users_menu form {
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+
+    input[type=text]:not(.browser-default){
+        font-size: 12px;
+    }
+
+    input:-webkit-autofill{
+        font-size: 12px;
+    }
+
+    .hello_message{
+        margin-top: 0;
+    }
+
+    .header{
+        margin: 0;
+    }
+
+}
