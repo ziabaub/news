@@ -13,7 +13,7 @@
 
     <properties>
         <spring.data.version>1.11.1.RELEASE</spring.data.version>
-        <h2.version>1.4.193</h2.version>
+        <h2.version>2.1.210</h2.version>
     </properties>
 
     <dependencies>
