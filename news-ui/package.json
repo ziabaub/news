@@ -35,7 +35,7 @@
     "@material-ui/lab": "^4.0.0-alpha.49",
     "materialize": "^1.0.0",
     "njwt": "^1.0.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react-toastify": "^5.5.0",
     "superagent": "^5.2.2"
   },
